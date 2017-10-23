@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+  background: lavender;
+  background-image: url("./fieldCorn.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.header {
+  /*background-color: black;*/
+  opacity: 3.0;
+  height: 15vh;
+  font-size: 40px;
+  padding-top: 40px;
+  background: #66ccff;
+  opacity: 0.5;
+}
+
+.temp{
+  /*background: red;*/
+  height: 30vh;
+  width: 40vh;s
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  /*opacity: 0.5;*/
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
