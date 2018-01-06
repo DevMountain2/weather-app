@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Child from "./SearchBox";
 import Results from "./Results";
-import logo from './logo.svg';
 import axios from "axios";
 import './App.css';
 
@@ -22,7 +21,7 @@ class App extends Component {
 
   handleClick(){
     axios.get('/api/weather?city=' + this.state.city)
-     .then(response => {console.log(response.data.main)
+     .then(response => {console.log(response.data)
    this.setState({
      results: response.data.main
    })
@@ -61,12 +60,12 @@ class App extends Component {
     //console.log(this.state.city);
     return (
       <div className="App">
-      <div class="header"> The current temperature </div>
+      <div className="header"> Weather </div>
           <Child
           city={this.state.city}
           handleChange = {this.handleChange}
           handleClick = {this.handleClick}/>
-          <div class="results">
+          <div className="results">
           <Results results={this.state.results} />
           </div>
       </div>

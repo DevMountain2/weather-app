@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import './SearchBox.css'
 
 class SearchBox extends Component {
   handleKeyPress(target) {
-  if(target.charCode==13){
+  if(target.charCode===13){
 
   }
 
@@ -12,11 +13,11 @@ class SearchBox extends Component {
   render() {
       //console.log(this.props.city);
     return (
-      <div>
-        <input type="text" onKeyPress={this.handleKeyPress}
+      <div className="main-div">
+        <input className="search-input" type="text" onKeyPress={this.handleKeyPress}
 
         onChange={this.props.handleChange} />
-        <button className="btn btn-primary" onClick={this.props.handleClick}> Search </button>
+        <button className="btn-primary" onClick={this.props.handleClick}> Search </button>
 
 
       </div>

@@ -1,3 +1,18 @@
-input {
-  
+.temp {
+  background: rgba(30, 30, 30, 0.5);
+  position: absolute;
+  top: 30%;
+  width: 500px;
+  height: 400px;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  box-shadow: 2px 2px 30px black;
+  border: 2px solid black;
+  color: white;
+  line-height: 2.0em;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
